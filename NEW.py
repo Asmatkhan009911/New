@@ -53,6 +53,22 @@ try:
 except FileNotFoundError:
 	key = 'none'
 
+oppo = random.choice(["CNM632", "CPH1114", "CPH1235", "CPH1451", "CPH1615", "CPH1664", "CPH1869", "CPH1929", "CPH1985",
+    "CPH2048", "CPH2107", "CPH2238", "CPH2261", "CPH2331", "CPH2332", "CPH2351", "CPH2389", "CPH2451",
+    "CPH2491", "CPH2513", "CPH2515", "CPH2519", "CPH2521", "CPH2523", "CPH2525", "CPH2529", "CPH2551",
+    "CPH2569", "CPH2579", "CPH2589", "CPH2591", "CPH2643", "CPH3475", "CPH3669", "CPH3682", "CPH3731",
+    "CPH3776", "CPH3785", "CPH4125", "CPH4275", "CPH4299", "CPH4395", "CPH4473", "CPH4987", "CPH5286",
+    "CPH5841", "CPH5947", "CPH6178", "CPH6244", "CPH6271", "CPH6316", "CPH6519", "CPH6528", "CPH6697",
+    "CPH7338", "CPH7364", "CPH7382", "CPH7532", "CPH7577", "CPH7948", "CPH7991", "CPH8153", "CPH8346",
+    "CPH8347", "CPH8363", "CPH8393", "CPH8467", "CPH8472", "CPH8534", "CPH8686", "CPH8893", "CPH9177",
+    "CPH9226", "CPH9659", "CPH9667", "CPH9716", "CPH9763", "CPH9839", "CPH9929", "Reno 10 5G", "Reno 10X",
+    "Reno 10X Zoom", "Reno 2", "Reno 2F", "Reno 2Z", "Reno 3", "Reno 3 5G", "Reno 3 Lite", "Reno 3 Pro",
+    "Reno 3A", "Reno 4 4G", "Reno 4 5G", "Reno 4 Lite", "Reno 4 Pro 4G", "Reno 4 Pro 5G", "Reno 4 SE 5G",
+    "Reno 4F", "Reno 4Z 5G", "Reno 5", "Reno 5 5G","Reno 5 Lite", "Reno 5 Pro 5G", "Reno 5 Pro Plus 5G", "Reno 5A", "Reno 5F", "Reno 5G", "Reno 5K", "Reno 5K 5G",
+    "Reno 5Z", "Reno 6", "Reno 6 Pro", "Reno 6 Pro 5G", "Reno 6 Pro Plus", "Reno 6 Z 5G", "Reno 7", "Reno 7 Pro",
+    "Reno 7 SE", "Reno 7A", "Reno 7Z", "Reno 8", "Reno 8 Pro", "Reno 8 Pro+", "Reno 8 Z", "Reno 8T", "Reno 9",
+    "Reno 9 Pro", "Reno 9 Pro+", "Reno A", "Reno Ace", "Reno Ace 2", "Reno K3", "Reno Z", "Reno2", "Reno5", "Reno8",
+    "RX17 Neo"])
 
 def line():
 	print(51*'-')
@@ -122,8 +138,8 @@ def connection_token():
 
 def iAmMethod3Ua():
 	android_version = random.choice(["10_0_2","10_1_1","10_2","10_2_1","10_3_1","10_3_2","10_3_3"])
-	END = "[FBAN/FB4A;FBAV/{str(random.randint(111,999))+'.0.0.'+str(random.randrange(1,300))+'.'+str(random.randint(111,999))};FBBV/{FBBV};FBDV/Android,{random.choice(['1','10'])};FBMD/Android;FBSN/android;FBSV/{(android_version).replace('_','.')};FBSS/2;FBCR/{random.choice(['Jazz','Zong'])};FBID/phone;FBLC/en_US;FBOP/5;FBRV/{random.choice(['106631002','0'])}]"
-	ua = random.choice("Mozilla/5.0 (Windows NT 10.0; {str(rr(7,11))}; Win64; x64){str(aZ)}{str(rx)}{str(aZ)}) AppleWebKit/537.36 (KHTML, like Gecko){str(rr(99,149))}.0.{str(rr(4500,4999))}.{str(rr(35,99))} Chrome/{str(rr(99,175))}.0.{str(rr(0,5))}.{str(rr(0,5))} Safari/537.36")
+	END = "[FBAN/FB4A;FBAV/'+str(random.randint(111,999))+'.0.0.'+str(random.randint(1111,9999))+';FBBV/'+str(random.randint(1111111,9999999))+';[FBAN/FB4A;FBAV/'+str(random.randint(111,999))+'.0.0.48.'+'122;FBBV/'+str(random.randint(1111111,9999999))+';FBDM/{density=2'+'.0,width='+'720,height='+'1456};FBLC/it'+'_IT;FBRV/27'+'3474118;FBCR/;FBMF'+'/OP'+'PO;FBBD/OPPO;FB'+'PN/com.facebook.katana;FB'+'DV/'+str(oppo)+';FBSV/10'+';FBBK/1;FBOP/1;FBC'+'A/arm64-v8a:;]"
+	ua = "[FBAN/FB4A;FBAV/'+str(random.randint(111,999))+'.0.0.'+str(random.randint(1111,9999))+';FBBV/'+str(random.randint(1111111,9999999))+';[FBAN/FB4A;FBAV/'+str(random.randint(111,999))+'.0.0.48.'+'122;FBBV/'+str(random.randint(1111111,9999999))+';FBDM/{density=2'+'.0,width='+'720,height='+'1456};FBLC/it'+'_IT;FBRV/27'+'3474118;FBCR/;FBMF'+'/OP'+'PO;FBBD/OPPO;FB'+'PN/com.facebook.katana;FB'+'DV/'+str(oppo)+';FBSV/10'+';FBBK/1;FBOP/1;FBC'+'A/arm64-v8a:;]"
 	return ua
 	
 
